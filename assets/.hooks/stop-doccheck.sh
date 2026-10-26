@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Stop hook —— Claude Code / Codex 每个用户回合收尾续跑一次自检。
 # 用法: stop-doccheck.sh [claude|codex]
-# 来源: project-flow-cy 的 stop-doccheck.sh，自检文案换成黑客松版。
+# 来源: project-flow 的 stop-doccheck.sh，自检文案换成黑客松版。
 # 依赖: jq（缺失时静默放行，不阻塞）
 tool="${1:-claude}"
 input="$(cat)"
