@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 460" width="1100" height="460" role="img" aria-label="两个 agent 之间没有对话通道，聊天内容分五个落点写进文件，下一棒靠读文件接上">
+  <rect width="1100" height="460" fill="#ffffff"/>
+
+  <text x="40" y="48" font-family="sans-serif" font-size="25" font-weight="700" fill="#111827">两个 Agent 之间没有通道，文件是唯一的连接</text>
+  <text x="40" y="76" font-family="sans-serif" font-size="14" fill="#6b7280">A 说过的话，B 一个字都读不到。所以聊完必须落成文件 —— 而且不是都往「进展」里塞。</text>
+
+  <!-- A -->
+  <rect x="40" y="106" width="250" height="288" rx="10" fill="#fef2f2" stroke="#fecaca"/>
+  <text x="60" y="134" font-family="sans-serif" font-size="13" font-weight="700" fill="#991b1b">Agent A　·　聊了 2 小时</text>
+
+  <g font-family="sans-serif" font-size="11.5" fill="#7f1d1d">
+    <rect x="56" y="150" width="218" height="34" rx="6" fill="#ffffff" stroke="#fecaca"/>
+    <text x="68" y="171">「语音入口砍掉，来不及」</text>
+
+    <rect x="56" y="192" width="218" height="34" rx="6" fill="#ffffff" stroke="#fecaca"/>
+    <text x="68" y="213">「B 方案试了，内存爆了」</text>
+
+    <rect x="56" y="234" width="218" height="34" rx="6" fill="#ffffff" stroke="#fecaca"/>
+    <text x="68" y="255">「现场网速我猜 3Mbps」</text>
+
+    <rect x="56" y="276" width="218" height="34" rx="6" fill="#ffffff" stroke="#fecaca"/>
+    <text x="68" y="297">「主办方说硬件能提前拿」</text>
+  </g>
+
+  <text x="60" y="336" font-family="sans-serif" font-size="11" fill="#b91c1c">关掉这个窗口，上面四句就消失了。</text>
+  <text x="60" y="356" font-family="sans-serif" font-size="11" fill="#b91c1c">下一棒会重新试一遍你已否决的方案。</text>
+  <text x="60" y="380" font-family="sans-serif" font-size="11" font-weight="700" fill="#991b1b">→ 所以它得写下去 ↓</text>
+
+  <!-- 连线 -->
+  <line x1="290" y1="250" x2="318" y2="250" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="318" y1="140" x2="318" y2="372" stroke="#9ca3af" stroke-width="1.5"/>
+  <g stroke="#9ca3af" stroke-width="1.5">
+    <line x1="318" y1="140" x2="356" y2="140"/>
+    <line x1="318" y1="198" x2="356" y2="198"/>
+    <line x1="318" y1="256" x2="356" y2="256"/>
+    <line x1="318" y1="314" x2="356" y2="314"/>
+    <line x1="318" y1="372" x2="356" y2="372"/>
+  </g>
+  <g fill="#9ca3af">
+    <polygon points="352,135 362,140 352,145"/>
+    <polygon points="352,193 362,198 352,203"/>
+    <polygon points="352,251 362,256 352,261"/>
+    <polygon points="352,309 362,314 352,319"/>
+    <polygon points="352,367 362,372 352,377"/>
+  </g>
+
+  <!-- 五个落点 -->
+  <text x="364" y="114" font-family="sans-serif" font-size="11" font-weight="700" fill="#6b7280">五个落点（按内容类型分，不是按重要性）</text>
+
+  <g font-family="sans-serif">
+    <rect x="364" y="126" width="400" height="28" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="378" y="145" font-size="12" font-weight="700" fill="#1e40af">flow/进展.md</text>
+    <text x="520" y="145" font-size="11.5" fill="#1e3a8a">这一棒的结论 + 下一步第一个动作</text>
+
+    <rect x="364" y="184" width="400" height="28" rx="6" fill="#f5f3ff" stroke="#ddd6fe"/>
+    <text x="378" y="203" font-size="12" font-weight="700" fill="#4c1d95">flow/decisions.md</text>
+    <text x="520" y="203" font-size="11.5" fill="#5b21b6">拍板了什么 + 否掉了什么、为什么</text>
+
+    <rect x="364" y="242" width="400" height="28" rx="6" fill="#fffbeb" stroke="#fde68a"/>
+    <text x="378" y="261" font-size="12" font-weight="700" fill="#92400e">flow/踩坑记录.md</text>
+    <text x="520" y="261" font-size="11.5" fill="#a16207">试过不行的方向，为什么不行</text>
+
+    <rect x="364" y="300" width="400" height="28" rx="6" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <text x="378" y="319" font-size="12" font-weight="700" fill="#166534">flow/assumptions.md</text>
+    <text x="520" y="319" font-size="11.5" fill="#15803d">所有「我猜」的话，带置信度级别</text>
+
+    <rect x="364" y="358" width="400" height="28" rx="6" fill="#fef2f2" stroke="#fecaca"/>
+    <text x="378" y="377" font-size="12" font-weight="700" fill="#991b1b">docs/…/证据表.md</text>
+    <text x="520" y="377" font-size="11.5" fill="#b91c1c">原话原文 + 出处，不改写</text>
+  </g>
+
+  <text x="364" y="410" font-family="sans-serif" font-size="11" fill="#9ca3af">不存的：聊天原文、反复确认、中间试错。几万字里，下一棒抓不到重点。</text>
+
+  <!-- B -->
+  <line x1="764" y1="140" x2="800" y2="140" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="800" y1="140" x2="800" y2="372" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="800" y1="250" x2="826" y2="250" stroke="#9ca3af" stroke-width="1.5"/>
+  <polygon points="826,245 836,250 826,255" fill="#9ca3af"/>
+
+  <rect x="840" y="106" width="220" height="288" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="858" y="134" font-family="sans-serif" font-size="13" font-weight="700" fill="#1e40af">Agent B　·　新的一次对话</text>
+
+  <g font-family="sans-serif" font-size="11.5" fill="#1e3a8a">
+    <text x="858" y="164">开工第一句（可直接抄）：</text>
+    <rect x="854" y="174" width="192" height="86" rx="6" fill="#ffffff" stroke="#bfdbfe"/>
+    <text x="866" y="195">读 AGENTS.md 和</text>
+    <text x="866" y="213">flow/进展.md 顶部那条。</text>
+    <text x="866" y="231">然后只回答三件事，</text>
+    <text x="866" y="249">先不要动手。</text>
+
+    <text x="858" y="290" font-weight="700">三件事：</text>
+    <text x="858" y="310">① 现在在哪一步</text>
+    <text x="858" y="330">② 下一步第一个动作</text>
+    <text x="858" y="350">③ 哪些未决事项要你拍板</text>
+  </g>
+  <text x="858" y="378" font-family="sans-serif" font-size="11" fill="#1d4ed8">复述不对 = 文件写得不够，去改文件。</text>
+
+  <!-- 底部 -->
+  <rect x="40" y="418" width="1020" height="30" rx="6" fill="#f9fafb" stroke="#e5e7eb"/>
+  <text x="56" y="438" font-family="sans-serif" font-size="12" fill="#4b5563">写不下去时问一句：<tspan font-weight="700" fill="#111827">「下一棒读到这一条，会不会重新踩一次我刚踩的坑？」</tspan> 会，就说明该写的没写。</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" width="1100" height="500" role="img" aria-label="项目目录分四次生长：第1天只建容器，前1/3加上线与钩子，G1后建模块，最后1/3才填代码">
+  <rect width="1100" height="500" fill="#ffffff"/>
+
+  <text x="30" y="46" font-family="sans-serif" font-size="24" font-weight="700" fill="#111827">目录分四次长大，不是一次铺完</text>
+  <text x="30" y="72" font-family="sans-serif" font-size="13.5" fill="#6b7280">第 1 天就铺五个空模块文件夹，不会加分 —— 评委只会看见你不知道要做什么。</text>
+
+  <!-- 框 1 -->
+  <text x="30" y="110" font-family="sans-serif" font-size="13" font-weight="700" fill="#111827">① 第 1 天 · 30 分钟</text>
+  <text x="30" y="128" font-family="sans-serif" font-size="11.5" fill="#6b7280">装资料。只建今天有东西要放的</text>
+  <rect x="30" y="140" width="250" height="292" rx="8" fill="#0f172a"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="11.5" fill="#cbd5e1">
+    <text x="46" y="168">项目/</text>
+    <text x="46" y="192">├── AGENTS.md</text>
+    <text x="46" y="216">├── flow/</text>
+    <text x="46" y="240">├── docs/</text>
+    <text x="46" y="264">└── materials/</text>
+  </g>
+  <text x="46" y="306" font-family="sans-serif" font-size="11" fill="#64748b">没有 web/　没有 api/</text>
+  <text x="46" y="326" font-family="sans-serif" font-size="11" fill="#64748b">没有 CI　没有 hook</text>
+  <text x="46" y="356" font-family="sans-serif" font-size="11" fill="#94a3b8">第一条 commit 就一条：</text>
+  <text x="46" y="374" font-family="ui-monospace, Menlo, monospace" font-size="10.5" fill="#7dd3fc">chore: 初始化比赛容器</text>
+
+  <!-- 框 2 -->
+  <text x="300" y="110" font-family="sans-serif" font-size="13" font-weight="700" fill="#111827">② 前 1/3 · 1 小时</text>
+  <text x="300" y="128" font-family="sans-serif" font-size="11.5" fill="#6b7280">证明发得出去，加协作约束</text>
+  <rect x="300" y="140" width="250" height="292" rx="8" fill="#0f172a"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="11.5" fill="#cbd5e1">
+    <text x="316" y="168">项目/</text>
+    <text x="316" y="192">├── AGENTS.md</text>
+    <text x="316" y="216">├── flow/</text>
+    <text x="316" y="240">├── docs/</text>
+    <text x="316" y="264">├── materials/</text>
+  </g>
+  <rect x="310" y="276" width="232" height="22" rx="4" fill="#14532d"/>
+  <rect x="310" y="302" width="232" height="22" rx="4" fill="#14532d"/>
+  <rect x="310" y="328" width="232" height="22" rx="4" fill="#14532d"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="11.5" fill="#86efac">
+    <text x="316" y="292">├── .githooks/pre-push</text>
+    <text x="316" y="318">├── .github/</text>
+    <text x="316" y="344">└── deploy/（白页）</text>
+  </g>
+  <text x="316" y="380" font-family="sans-serif" font-size="11" fill="#94a3b8">白页公网能打开才算过</text>
+  <text x="316" y="400" font-family="sans-serif" font-size="11" fill="#94a3b8">不是「配了 CI」，是「点得开」</text>
+
+  <!-- 框 3 -->
+  <text x="570" y="110" font-family="sans-serif" font-size="13" font-weight="700" fill="#111827">③ G1 通过后</text>
+  <text x="570" y="128" font-family="sans-serif" font-size="11.5" fill="#6b7280">形态定了几个，就建几个</text>
+  <rect x="570" y="140" width="250" height="292" rx="8" fill="#0f172a"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="11.5" fill="#cbd5e1">
+    <text x="586" y="168">项目/</text>
+    <text x="586" y="192">├── AGENTS.md</text>
+    <text x="586" y="216">├── flow/</text>
+    <text x="586" y="240">├── docs/</text>
+    <text x="586" y="264">├── materials/</text>
+  </g>
+  <rect x="580" y="276" width="232" height="22" rx="4" fill="#14532d"/>
+  <rect x="580" y="302" width="232" height="22" rx="4" fill="#14532d"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="11.5" fill="#86efac">
+    <text x="586" y="292">├── web/</text>
+    <text x="586" y="318">└── api/</text>
+  </g>
+  <text x="586" y="352" font-family="sans-serif" font-size="11" fill="#94a3b8">形态选了 Web 工具 → 两个目录</text>
+  <text x="586" y="372" font-family="sans-serif" font-size="11" fill="#94a3b8">选了 App → android/ + api/</text>
+  <text x="586" y="392" font-family="sans-serif" font-size="11" fill="#94a3b8">硬件 → 固件/ + android/ + api/</text>
+  <text x="586" y="416" font-family="sans-serif" font-size="11" fill="#f87171">一个都不预建</text>
+
+  <!-- 框 4 -->
+  <text x="840" y="110" font-family="sans-serif" font-size="13" font-weight="700" fill="#111827">④ 最后 1/3</text>
+  <text x="840" y="128" font-family="sans-serif" font-size="11.5" fill="#6b7280">这时才往里填代码</text>
+  <rect x="840" y="140" width="230" height="292" rx="8" fill="#0f172a"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="11.5" fill="#cbd5e1">
+    <text x="856" y="168">项目/</text>
+    <text x="856" y="192">├── AGENTS.md</text>
+    <text x="856" y="216">├── flow/</text>
+    <text x="856" y="240">├── docs/</text>
+    <text x="856" y="264">├── materials/</text>
+    <text x="856" y="288">├── web/</text>
+  </g>
+  <rect x="850" y="300" width="212" height="22" rx="4" fill="#14532d"/>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="11.5" fill="#86efac">
+    <text x="856" y="316">│   └── src/</text>
+  </g>
+  <g font-family="ui-monospace, Menlo, monospace" font-size="11.5" fill="#cbd5e1">
+    <text x="856" y="342">└── api/</text>
+  </g>
+  <text x="856" y="376" font-family="sans-serif" font-size="11" fill="#94a3b8">选型 · 脚手架 · 真机联调</text>
+  <text x="856" y="396" font-family="sans-serif" font-size="11" fill="#94a3b8">最小闭环跑通一次</text>
+
+  <!-- 底部 -->
+  <rect x="30" y="448" width="1040" height="34" rx="6" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="46" y="470" font-family="sans-serif" font-size="12.5" fill="#166534">每一步只问一句：<tspan font-weight="700" fill="#14532d">这个目录今天有没有东西要放进去？</tspan> 有就建，没有就等。提前建的空目录，最后要么是空的，要么被你删掉。</text>
+</svg>
