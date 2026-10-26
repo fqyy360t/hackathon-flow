@@ -15,7 +15,7 @@
 flow/       唯一控制层（charter / team / 未认领 / plan / claims / assumptions / 进展 / decisions / 踩坑 / tasks / 规范）
 docs/       集中内容层
   product/     赛程卡 赛道盘点 产品与功能清单 证据表 预赛材料
-  architecture/项目结构 评分映射表 契约冻结
+  architecture/项目结构 评分映射表 打分记录 契约冻结
   contracts/   接口唯一真相源（api.yaml / 字段命名.md / fixtures/）
   modules/     只影响一个模块的说明
   reviews/     跨模型评审记录 + 复盘.md（赛后 48h）
