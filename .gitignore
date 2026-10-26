@@ -1,0 +1,21 @@
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+
+# 运行时
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.log
+
+# 本地密钥（模板里只放 .env.example）
+.env
+.env.local

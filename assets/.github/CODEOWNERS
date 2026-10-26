@@ -1,0 +1,23 @@
+# CODEOWNERS —— 按模块指定负责人
+# 放 .github/CODEOWNERS（或仓库根 CODEOWNERS）
+# 作用：开 PR 时自动把对应的人加成 reviewer；冲突时知道该找谁。
+# 用法：把 @<GitHub用户名> 换成真实账号，删掉用不到的目录。
+
+# 默认：所有文件归合并权持有人
+*                       @<captain>
+
+# 模块（G1 定了形态再取消注释）
+# /web/                 @<frontend>
+# /api/                 @<main-coder>
+# /android/             @<android>
+# /ml/                  @<ml>
+
+# 契约与文档：改动必须让人知道
+/docs/contracts/        @<captain> @<main-coder>
+/docs/architecture/     @<captain>
+/flow/                  @<captain>
+
+# 交付物：只有一个人能动
+/materials/             @<captain>
+/AGENTS.md              @<captain>
+/.github/               @<captain>

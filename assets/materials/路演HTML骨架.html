@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>路演 · 项目名</title>
+<style>
+  :root{--bg:#0b0f17;--fg:#eef3fb;--dim:#93a1b5;--accent:#4ea1ff;--warn:#ffb454;--line:#1d2735}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;background:#000;overflow:hidden;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  #stage{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    background:var(--bg);overflow:hidden;color:var(--fg)}
+  .slide{position:absolute;inset:0;padding:6% 7%;display:flex;flex-direction:column;
+    justify-content:center;opacity:0;visibility:hidden;transition:opacity .18s ease}
+  .slide.active{opacity:1;visibility:visible}
+  h1{font-size:2.3em;line-height:1.2;font-weight:700;letter-spacing:-.01em}
+  h2{font-size:1.75em;line-height:1.25;font-weight:700;margin-bottom:.5em}
+  h3{font-size:1em;margin-bottom:.35em;color:var(--accent);font-weight:600}
+  p,li{font-size:1em;line-height:1.55}
+  .lead{font-size:1.3em;line-height:1.5}
+  .dim{color:var(--dim)}
+  .accent{color:var(--accent)}
+  .warn{color:var(--warn)}
+  .kicker{font-size:.68em;letter-spacing:.18em;color:var(--dim);margin-bottom:.9em}
+  .big{font-size:3em;font-weight:800;line-height:1.05}
+  ul{list-style:none}
+  li{position:relative;padding-left:1.15em;margin:.45em 0}
+  li:before{content:"";position:absolute;left:0;top:.62em;width:.4em;height:.4em;
+    border-radius:50%;background:var(--accent)}
+  .quote{border-left:3px solid var(--accent);padding:.35em 0 .35em 1em;color:var(--dim);
+    font-size:.9em;line-height:1.5}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.3em}
+  .card{border:1px solid var(--line);border-radius:.45em;padding:.9em 1em;background:#0f1520}
+  .card p{font-size:.85em;color:var(--dim)}
+  #bar{position:absolute;left:0;bottom:0;height:3px;background:var(--accent);width:0;
+    transition:width .18s ease;z-index:5}
+  #pager{position:absolute;right:2.2%;bottom:2.4%;font-size:.66em;color:var(--dim);z-index:5;
+    font-variant-numeric:tabular-nums}
+  #hint{position:absolute;left:2.2%;bottom:2.4%;font-size:.58em;color:#5a6577;z-index:5}
+  .qr{display:flex;gap:2em;margin-top:1.1em}
+  .qr figure{text-align:center}
+  .qr .ph{width:6.5em;height:6.5em;background:#fff;border-radius:.3em;display:grid;
+    place-items:center;color:#111;font-size:.62em;line-height:1.4;padding:.4em}
+  .qr figcaption{font-size:.62em;color:var(--dim);margin-top:.5em}
+  @media print{
+    html,body{overflow:visible;background:#fff}
+    #stage{position:static;transform:none;width:100%!important;height:auto!important}
+    .slide{position:relative;opacity:1;visibility:visible;page-break-after:always;height:56.25vw}
+    #bar,#pager,#hint{display:none}
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <section class="slide active">
+    <div class="kicker">1 · 结果先行 · 15 秒</div>
+    <h1>这里放<span class="accent">用完之后的那个画面</span></h1>
+    <p class="lead dim" style="margin-top:.7em">不是 logo，不是团队介绍。<br>配真实截图或 5 秒循环录屏。</p>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">2 · 谁的什么痛 · 40 秒</div>
+    <h2>一句话说清是谁、在什么场景、疼在哪</h2>
+    <p class="quote">"贴一条真实差评原文 / 工单号，带来源与日期。"<br>—— 平台 · 2026-XX-XX</p>
+    <p style="margin-top:1em">现在的做法是 <span class="accent">___</span>，代价是 <span class="warn">___</span>。</p>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">3 · 现在怎么做 · 60 秒</div>
+    <h2>三步，每步一张图</h2>
+    <div class="grid2">
+      <div class="card"><h3>① 输入</h3><p>说一句 / 圈一个区域 / 拍一张照</p></div>
+      <div class="card"><h3>② 判断</h3><p>系统做了什么判断（一句话，不讲架构）</p></div>
+      <div class="card"><h3>③ 结果</h3><p>用户拿到什么可直接用的东西</p></div>
+      <div class="card"><h3>④ 兜底</h3><p>判断不了时，系统说"不知道"</p></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">4 · 三个核心设计 · 90 秒</div>
+    <h2>每个都跟一句"为什么这样做"</h2>
+    <ul>
+      <li><b>设计一</b> —— 不是 ___，而是 ___。<span class="dim">因为 ___。</span></li>
+      <li><b>设计二</b> —— 不是 ___，而是 ___。<span class="dim">因为 ___。</span></li>
+      <li><b>设计三</b> —— 不是 ___，而是 ___。<span class="dim">因为 ___。</span></li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">5 · 技术一句话 · 30 秒</div>
+    <div class="big accent">一句话</div>
+    <p class="lead" style="margin-top:.6em">关键机制是什么，然后立刻回到"所以用户得到什么"。</p>
+    <p class="dim" style="margin-top:.9em">不讲技术栈清单。</p>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">6 · 边界 · 45 秒</div>
+    <h2>什么情况下，我们<span class="warn">不判断 / 不承诺</span></h2>
+    <div class="grid2">
+      <div class="card"><h3>遮挡 / 离线 / 过期</h3><p>进入 UNKNOWN，不猜</p></div>
+      <div class="card"><h3>超出覆盖范围</h3><p>明确说无法回答，不给近似答案</p></div>
+    </div>
+    <p class="quote" style="margin-top:.9em">主动说边界，比多讲一个功能更能建立信任。</p>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">7 · 可验证 · 30 秒</div>
+    <h2>现场可以亲眼验证的 5 件事</h2>
+    <ul>
+      <li>现场改一句需求，结果随之变化（不是写死的）</li>
+      <li>真实输入 → 真实输出（不是 mock）</li>
+      <li>遮挡 / 断网时进入 UNKNOWN（不编）</li>
+      <li>每个结论可追溯到来源（时间 + 设备 + 帧）</li>
+      <li>换一个场景，同一套运行时再跑一次</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">8 · 扫码 · 10 秒</div>
+    <h2>现在就试试</h2>
+    <div class="qr">
+      <figure><div class="ph">替换为<br>demo 二维码</div><figcaption>demo 地址</figcaption></figure>
+      <figure><div class="ph">替换为<br>仓库二维码</div><figcaption>开源仓库</figcaption></figure>
+    </div>
+    <p class="dim" style="margin-top:1em">团队一行：___ ｜ ___ ｜ ___ ｜ ___</p>
+  </section>
+
+  <div id="bar"></div>
+  <div id="hint">← → / 空格翻页 · F 全屏 · 点击左右半屏翻页</div>
+  <div id="pager">1 / 8</div>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var stage  = document.getElementById('stage');
+  var bar    = document.getElementById('bar');
+  var pager  = document.getElementById('pager');
+  var i = 0;
+
+  function fit(){
+    var w = Math.min(window.innerWidth,  window.innerHeight * 16 / 9);
+    var h = Math.min(window.innerHeight, window.innerWidth  * 9 / 16);
+    stage.style.width  = w + 'px';
+    stage.style.height = h + 'px';
+    stage.style.fontSize = (h / 34) + 'px';
+  }
+
+  function show(n){
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function(s, k){ s.classList.toggle('active', k === i); });
+    bar.style.width = ((i + 1) / slides.length * 100) + '%';
+    pager.textContent = (i + 1) + ' / ' + slides.length;
+    if (history.replaceState) history.replaceState(null, '', '#' + (i + 1));
+  }
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); show(i + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); show(i - 1); }
+    else if (e.key === 'Home') { show(0); }
+    else if (e.key === 'End')  { show(slides.length - 1); }
+    else if (e.key === 'f' || e.key === 'F') {
+      if (!document.fullscreenElement) { document.documentElement.requestFullscreen(); }
+      else { document.exitFullscreen(); }
+    }
+  });
+
+  document.addEventListener('click', function(e){
+    if (e.clientX > window.innerWidth / 2) { show(i + 1); } else { show(i - 1); }
+  });
+
+  window.addEventListener('resize', fit);
+  window.addEventListener('hashchange', function(){
+    var n = parseInt(location.hash.slice(1), 10);
+    if (n) show(n - 1);
+  });
+
+  fit();
+  var s = parseInt(location.hash.slice(1), 10);
+  show(s ? s - 1 : 0);
+})();
+</script>
+</body>
+</html>

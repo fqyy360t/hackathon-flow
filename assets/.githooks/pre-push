@@ -1,0 +1,50 @@
+#!/bin/sh
+# pre-push：拦下直接 push 到 main / master
+# 安装：
+#   mkdir -p .githooks && cp <skill>/assets/.githooks/pre-push .githooks/
+#   chmod +x .githooks/pre-push
+#   git config core.hooksPath .githooks
+# 紧急通道（F 点后救火）：
+#   ALLOW_MAIN_PUSH=1 git push origin main
+#   事后在 flow/踩坑记录.md 记一条为什么
+
+BLOCKED=0
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+  case "$remote_ref" in
+    refs/heads/main|refs/heads/master) ;;
+    *) continue ;;
+  esac
+
+  # 删除远程分支 → 放行（交给服务端 restrict deletions 管）
+  if echo "$local_sha" | grep -qE '^0+$'; then
+    continue
+  fi
+
+  # 首次创建 main（远程还不存在）→ 放行，否则第 1 天就推不上去
+  if echo "$remote_sha" | grep -qE '^0+$'; then
+    continue
+  fi
+
+  # 紧急通道
+  if [ "$ALLOW_MAIN_PUSH" = "1" ]; then
+    echo "⚠️  ALLOW_MAIN_PUSH=1：已放行直推 $remote_ref"
+    echo "   记得在 flow/踩坑记录.md 记一条为什么绕过。"
+    continue
+  fi
+
+  BLOCKED=1
+  echo ""
+  echo "❌ 禁止直接 push 到 ${remote_ref#refs/heads/}"
+  echo ""
+  echo "   正确做法（90 秒）："
+  echo "     git switch -c feat/<一句话>        # 从当前状态拉分支"
+  echo "     git push -u origin feat/<一句话>"
+  echo "     # 打开 GitHub 页面 → Compare & pull request → Create → Merge"
+  echo ""
+  echo "   为什么：直推没有 diff 复看、没有可回滚的单位、冲突在 push 那刻才炸。"
+  echo "   紧急情况：ALLOW_MAIN_PUSH=1 git push origin ${remote_ref#refs/heads/}"
+  echo ""
+done
+
+exit $BLOCKED

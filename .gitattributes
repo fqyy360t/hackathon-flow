@@ -1,0 +1,29 @@
+# 换行符：Windows 上最容易静默搞坏的一类文件
+* text=auto eol=lf
+
+# 脚本必须 LF，否则 sh 报 '\r: command not found'
+# 注意：pre-push / pre-commit 没有扩展名，必须按 basename 匹配（不带斜杠才能递归生效）
+*.sh            text eol=lf
+*.bash          text eol=lf
+pre-push        text eol=lf
+pre-commit      text eol=lf
+commit-msg      text eol=lf
+post-merge      text eol=lf
+.githooks/*     text eol=lf
+**/.githooks/*  text eol=lf
+
+# Windows 批处理必须 CRLF（且需 ANSI/GBK 编码）
+*.bat           text eol=crlf
+*.cmd           text eol=crlf
+*.ps1           text eol=crlf
+
+# 二进制，不要动
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.gif           binary
+*.mp4           binary
+*.pdf           binary
+*.xlsx          binary
+*.docx          binary
+*.pptx          binary
