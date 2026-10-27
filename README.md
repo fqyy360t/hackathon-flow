@@ -1,13 +1,40 @@
 # hackathon-flow
 
-> **一场黑客松不是一次开发，是一次有截止时间的说服。**
-> 这套流程把"说服"拆成可验收的动作：赛前算出评委怎么给分，提交前 7 小时冻结系统，现场只接不造，最后用一个能跑的 demo 加一份经得起追问的记录收口。
+![references](https://img.shields.io/badge/references-19_%E4%BB%BD-2ea44f?style=flat-square)
+![templates](https://img.shields.io/badge/templates-42_%E4%B8%AA-blue?style=flat-square)
+![examples](https://img.shields.io/badge/filled_examples-7_%E4%BB%BD-8957e5?style=flat-square)
+![anti-patterns](https://img.shields.io/badge/anti--patterns-77-orange?style=flat-square)
+![agents](https://img.shields.io/badge/Claude_Code_%7C_Codex-%E5%8F%AF%E6%8E%A5%E5%8A%9B-d73a4a?style=flat-square)
 
-**它不是课程，是可执行的文件骨架。** 19 份详规（5,398 行）+ 42 个可直接复制的模板 + 7 份填好的示例 + 6 张流程图 + 1 套装得上的 git 钩子，装进任意项目目录就能开工。
+### 黑客松从「报名」到「领奖」的工程脚手架
+
+**不是教程，是装进项目里就能跑的骨架。** 19 份详规 + 42 个模板 + 7 份真填过的示例 + 77 条反模式，**丢给 Claude Code / Codex，说一句人话就能开工**——不用先学方法论，不会 git 也能先跑起来。
+
+> **它解决的是一个很具体的场面**：你已经报名了，只剩 19 天、3 个人，资料全散在群聊里，上一场打到凌晨四点还在改 PPT。
+> 这套流程把"来不及"提前到还能救的时候——**第 1 天建容器，第 10 天决定不做什么，最后 7 小时冻结系统，现场只接不造。**
 
 ![全流程：工程分四次长出来](images/01-overview.svg)
 
-**一句话**：第 1 天建一个空容器装资料，之后每个目录都在「今天已经有东西要放进去」的那天才出现——不是第 1 天铺完，也不是最后一天补。
+| 你的处境 | 它当场给你的动作 |
+|---|---|
+| 第一次打，完全不知道从哪下手 | 30 分钟建好骨架（`flow/` `docs/` `AGENTS.md`），第 1 天就有地方放东西 |
+| 时间根本不够，越到最后越乱 | 先用三个日期算出档位（L/M/S/X/T/Z）再排期，不抄别人 42 天赛程 |
+| 评分标准赛后才给，前面白做 | 五种到达形态各有打法，90 分钟重对齐，**不重写** |
+| 最后一天全队互相覆盖代码 | 三层提交约束 + F 点冻结 + 材料冻结，两条线不打架 |
+| 换个 Agent 就接不上 | 聊天内容落五个文件，A 的结论 B 读得到，`进展.md` 顶部就是交接棒 |
+| 打完就忘，下一场从头再来 | 四层复盘（事实 / 归因 / 可复用 / 反哺），直接变下一场的起点 |
+
+**一行装上**（装到你在用的那个 Agent 的 skills 目录）：
+
+```bash
+git clone https://github.com/fqyy360t/hackathon-flow.git ~/.claude/skills/hackathon-flow-lemon     # Claude Code
+git clone https://github.com/fqyy360t/hackathon-flow.git ~/.codex/skills/hackathon-flow-lemon      # Codex
+git clone https://github.com/fqyy360t/hackathon-flow.git ~/.workbuddy/skills/hackathon-flow-lemon  # WorkBuddy
+```
+
+装完说这句话就能开始：**"我要打 XX 黑客松，只有这条链接：<url>。帮我看看值不值得打，从哪开始。"**
+
+**它管流程和判据，不管你的业务内容**——市场数据、技术选型、用户访谈是你的；什么时候该判断什么、判断完写在哪、时间不够先砍什么，是它的。
 
 ---
 
@@ -30,14 +57,20 @@
 
 ### 1.1 两种装法，选一个
 
-**A. 作为 Agent Skill**（Claude Code / Codex / 任何读 `skills/` 目录的工具）
+**A. 作为 Agent Skill**（Claude Code / Codex / WorkBuddy / 任何读 `skills/` 目录的工具）
 
 ```bash
 git clone https://github.com/fqyy360t/hackathon-flow.git ~/.claude/skills/hackathon-flow-lemon
-# 或 codex 对应的 skills 目录
+# Codex 用 ~/.codex/skills/，WorkBuddy 用 ~/.workbuddy/skills/
 ```
 
 目录名建议保持 `hackathon-flow-lemon`（与 `SKILL.md` 的 `name` 字段一致，部分工具会校验）。
+
+**同时用多个 Agent 时，别复制三份**——复制出来的会各自变旧。装一份，另外两处建目录联接（Windows 下 `mklink /J`，macOS/Linux 用 `ln -s`），`git pull` 一次三处同步：
+
+```bash
+mklink /J "%USERPROFILE%\.claude\skills\hackathon-flow-lemon" "%USERPROFILE%\.workbuddy\skills\hackathon-flow-lemon"
+```
 
 **B. 只用模板，不装 skill**
 
@@ -392,11 +425,12 @@ assets/
 
 ## 谁适合用
 
-- 要打一场黑客松，且**真的想拿名次**（不是为了体验）
-- 手上有 3–5 人小队，或愿意一个人当三个人用
-- 能接受"赛前花两小时做判断，可能比多写两小时代码更值"
+- **第一次打、零基础**：不用先学方法论，照 `flow/` 里的格子填就行，第 1 天就有一个能往里放东西的容器
+- **打过几场，但总在最后 24 小时翻车**：F 点、材料冻结、四道门，把"来不及"提前到还能救的时候
+- **一个人顶三个人**：单人打法也写了（砍到一条演示链路），不是只为 5 人小队准备
+- **用 AI Agent 干活**：Claude Code / Codex 之间靠文件接力，换 Agent 不用把来龙去脉重讲一遍
 
-**不适合**：把比赛当成一次学习活动、不追求名次的人。这套东西的每个判据都是为了赢，用在不追求赢的场合会显得很累。
+**不适合**：把比赛当纯体验、不打算赶截止时间的人。这套东西每个判据都指向"在截止前交出一个能跑的东西"，用在不赶时间的场合会显得很累。
 
 ---
 
@@ -404,4 +438,6 @@ assets/
 
 未附 License。想复用、改写、放进自己团队流程里，直接拿，不需要问。如果把它用在公开作品里，提一句来源就行。
 
-**如果你发现了这套框架判错的地方，那比发现它判对的地方更有价值** —— 尤其是"我按这套做但输了"的复盘，这是当前最大的空白。
+**用完之后，不管输赢，欢迎开个 issue 说一声**：哪一步最有用、哪一步把你带沟里了。特别是**"按这套做但还是输了"**的复盘——那是现在最缺的样本，比多一个 star 有价值。
+
+如果它帮你少熬了一个通宵，点个 **Star**，让下一场要打的人能刷到它。
