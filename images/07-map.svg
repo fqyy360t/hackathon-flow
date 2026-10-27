@@ -38,7 +38,7 @@
     <text x="661" y="178" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">01</text>
     <text x="682" y="179" font-size="12" fill="#1f2937">逆向工程</text>
 
-    <text x="822" y="179" font-size="11" fill="#2563eb">← 这四份决定「要不要打」，30 分钟能收口</text>
+    <text x="822" y="179" font-size="11" fill="#2563eb">← 这四份决定「要不要打」，含出资方是谁</text>
 
     <text x="120" y="212" font-size="11.5" fill="#374151">产出 → 赛程卡（三个日期 → 档位 → F 点）· 赛道盘点（砍到只剩 1 个 <tspan fill="#2563eb" font-weight="700">+ 每个赛道背后是谁、它今年卡在哪</tspan>）· 一句能对外说的题</text>
   </g>
@@ -57,7 +57,7 @@
     <rect x="112" y="282" width="162" height="42" rx="7" fill="#ffffff" stroke="#ddd6fe"/>
     <rect x="120" y="291" width="26" height="24" rx="5" fill="#7c3aed"/>
     <text x="133" y="308" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">02</text>
-    <text x="154" y="309" font-size="12" fill="#1f2937">选题与调研</text>
+    <text x="154" y="309" font-size="12" fill="#1f2937">调研·用户·商业</text>
 
     <rect x="288" y="282" width="162" height="42" rx="7" fill="#ffffff" stroke="#ddd6fe"/>
     <rect x="296" y="291" width="26" height="24" rx="5" fill="#7c3aed"/>
@@ -79,7 +79,7 @@
     <text x="837" y="308" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">14</text>
     <text x="858" y="309" font-size="12" fill="#1f2937">仓库与远程</text>
 
-    <text x="120" y="342" font-size="11.5" fill="#374151">产出 → 证据包（几条真实差评）· 方案书 · 空容器工程（flow/ docs/ materials/）· 一个别人能 clone 的仓库</text>
+    <text x="120" y="342" font-size="11.5" fill="#374151">产出 → 证据包（差评 + 访谈原话 + 画像卡）· 商业定位三问 · 方案书 · 空容器工程（flow/ docs/ materials/）· 一个别人能 clone 的仓库</text>
   </g>
 
   <!-- ============ ③ 开赛后 ============ -->
