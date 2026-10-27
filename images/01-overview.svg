@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="黑客松全流程时间轴与工程四层生长图">
-  <rect width="1200" height="600" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" role="img" aria-label="黑客松全流程时间轴与工程五层生长图：第1天先只读素材再建容器，前1/3建上线骨架，G1后建模块目录，最后1/3才写代码">
+  <rect width="1200" height="660" fill="#ffffff"/>
 
-  <text x="48" y="50" font-family="sans-serif" font-size="25" font-weight="700" fill="#111827">一场黑客松，工程分四次长出来</text>
-  <text x="48" y="80" font-family="sans-serif" font-size="14" fill="#6b7280">不是第 1 天铺完整套目录。每个目录出现在「今天已经有东西要放进去」的那一天。</text>
+  <text x="48" y="50" font-family="sans-serif" font-size="25" font-weight="700" fill="#111827">一场黑客松，工程分五次长出来</text>
+  <text x="48" y="80" font-family="sans-serif" font-size="14" fill="#6b7280">不是第 1 天铺完整套目录。每个目录出现在「今天已经有东西要放进去」的那一天。先读材料，再写代码。</text>
 
   <!-- 时间轴 -->
   <line x1="160" y1="140" x2="1140" y2="140" stroke="#d1d5db" stroke-width="2"/>
@@ -34,70 +34,77 @@
     <text x="1140" y="162" font-size="11" fill="#9ca3af">材料冻结 −3.5h</text>
   </g>
 
-  <!-- 四层 -->
+  <!-- 五层 -->
   <g font-family="sans-serif">
     <!-- 层标签 -->
     <g font-size="13" font-weight="700" fill="#1f2937">
-      <text x="48" y="238">① 容器</text>
-      <text x="48" y="304">② 上线骨架</text>
-      <text x="48" y="370">③ 模块目录</text>
-      <text x="48" y="436">④ 代码</text>
+      <text x="48" y="222">⓿ 材料核验</text>
+      <text x="48" y="288">① 容器</text>
+      <text x="48" y="354">② 上线骨架</text>
+      <text x="48" y="420">③ 模块目录</text>
+      <text x="48" y="486">④ 代码</text>
     </g>
     <g font-size="11" fill="#9ca3af">
-      <text x="48" y="256">装资料</text>
-      <text x="48" y="322">证明能发布</text>
-      <text x="48" y="388">形态的影子</text>
-      <text x="48" y="454">真内容</text>
+      <text x="48" y="240">只读，不加工</text>
+      <text x="48" y="306">装资料</text>
+      <text x="48" y="372">证明能发布</text>
+      <text x="48" y="438">形态的影子</text>
+      <text x="48" y="504">真内容</text>
     </g>
 
     <!-- 未开始底槽 -->
     <g fill="#f3f4f6">
-      <rect x="160" y="206" width="980" height="52" rx="8"/>
-      <rect x="160" y="272" width="980" height="52" rx="8"/>
-      <rect x="160" y="338" width="980" height="52" rx="8"/>
-      <rect x="160" y="404" width="980" height="52" rx="8"/>
+      <rect x="160" y="190" width="980" height="52" rx="8"/>
+      <rect x="160" y="256" width="980" height="52" rx="8"/>
+      <rect x="160" y="322" width="980" height="52" rx="8"/>
+      <rect x="160" y="388" width="980" height="52" rx="8"/>
+      <rect x="160" y="454" width="980" height="52" rx="8"/>
     </g>
 
     <!-- 已开始条 -->
     <g stroke-width="1.5">
-      <rect x="160" y="206" width="980" height="52" rx="8" fill="#dbeafe" stroke="#93c5fd"/>
-      <rect x="323" y="272" width="817" height="52" rx="8" fill="#e0e7ff" stroke="#a5b4fc"/>
-      <rect x="486" y="338" width="654" height="52" rx="8" fill="#ede9fe" stroke="#c4b5fd"/>
-      <rect x="650" y="404" width="490" height="52" rx="8" fill="#fee2e2" stroke="#fca5a5"/>
+      <rect x="160" y="190" width="46" height="52" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-dasharray="5 3"/>
+      <rect x="160" y="256" width="980" height="52" rx="8" fill="#dbeafe" stroke="#93c5fd"/>
+      <rect x="323" y="322" width="817" height="52" rx="8" fill="#e0e7ff" stroke="#a5b4fc"/>
+      <rect x="486" y="388" width="654" height="52" rx="8" fill="#ede9fe" stroke="#c4b5fd"/>
+      <rect x="650" y="454" width="490" height="52" rx="8" fill="#fee2e2" stroke="#fca5a5"/>
     </g>
 
     <!-- 起点小旗 -->
     <g stroke="#ffffff" stroke-width="2">
-      <circle cx="160" cy="232" r="6" fill="#2563eb"/>
-      <circle cx="323" cy="298" r="6" fill="#4f46e5"/>
-      <circle cx="486" cy="364" r="6" fill="#7c3aed"/>
-      <circle cx="650" cy="430" r="6" fill="#dc2626"/>
+      <circle cx="160" cy="216" r="6" fill="#64748b"/>
+      <circle cx="160" cy="282" r="6" fill="#2563eb"/>
+      <circle cx="323" cy="348" r="6" fill="#4f46e5"/>
+      <circle cx="486" cy="414" r="6" fill="#7c3aed"/>
+      <circle cx="650" cy="480" r="6" fill="#dc2626"/>
     </g>
 
     <!-- 条内文字 -->
+    <g font-size="13" fill="#334155">
+      <text x="222" y="212">文件清单 + 三个判断：这个题打不打 · 素材够不够 · 缺哪一类</text>
+      <text x="222" y="232" font-size="11.5" fill="#b45309">30 分钟硬上限，只产出判断、不产出脚本 —— 一旦开始写解析器、复算指标，你就已经在 ④</text>
+    </g>
     <g font-size="13" fill="#1e3a8a">
-      <text x="182" y="237">git init · flow/ · docs/ · AGENTS.md —— 只建「今天有东西要放」的那几层</text>
+      <text x="182" y="287">git init · flow/ · docs/ · AGENTS.md —— 只建「今天有东西要放」的那几层</text>
     </g>
     <g font-size="13" fill="#312e81">
-      <text x="345" y="303">CI 骨架 · 一个能打开的部署白页 · 域名与证书预验</text>
+      <text x="345" y="353">CI 骨架 · 一个能打开的部署白页 · 域名与证书预验</text>
     </g>
     <g font-size="13" fill="#4c1d95">
-      <text x="508" y="369">web/ · api/ · android/ —— 形态定了几个就建几个，一个都不预建</text>
+      <text x="508" y="419">web/ · api/ · android/ —— 形态定了几个就建几个，一个都不预建</text>
     </g>
     <g font-size="13" fill="#7f1d1d">
-      <text x="672" y="435">技术选型 · 脚手架 · 真机联调 · 最小闭环</text>
+      <text x="672" y="485">技术选型 · 脚手架 · 解析器 · 真机联调 · 最小闭环</text>
     </g>
-
-    <!-- 注释 -->
   </g>
 
   <!-- F 点竖线 + 只修不加 -->
-  <line x1="976" y1="190" x2="976" y2="470" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 4"/>
-  <rect x="986" y="452" width="148" height="30" rx="6" fill="#fef3c7" stroke="#fbbf24"/>
-  <text x="1060" y="472" font-family="sans-serif" font-size="12" font-weight="700" fill="#92400e" text-anchor="middle">此后只修不加</text>
+  <line x1="976" y1="190" x2="976" y2="520" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 4"/>
+  <rect x="986" y="512" width="148" height="30" rx="6" fill="#fef3c7" stroke="#fbbf24"/>
+  <text x="1060" y="532" font-family="sans-serif" font-size="12" font-weight="700" fill="#92400e" text-anchor="middle">此后只修不加</text>
 
   <!-- 底部判据 -->
-  <rect x="48" y="516" width="1104" height="56" rx="8" fill="#f9fafb" stroke="#e5e7eb"/>
-  <text x="68" y="541" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#111827">判据只有一条：这个目录今天有没有东西要放进去。</text>
-  <text x="68" y="561" font-family="sans-serif" font-size="13" fill="#4b5563">有 → 现在就建（今天就要放差评原文，就建证据表）；没有 → 等它有（还不确定做不做 App，android/ 就不建）。</text>
+  <rect x="48" y="566" width="1104" height="56" rx="8" fill="#f9fafb" stroke="#e5e7eb"/>
+  <text x="68" y="591" font-family="sans-serif" font-size="13.5" font-weight="700" fill="#111827">判据只有一条：这个目录今天有没有东西要放进去。</text>
+  <text x="68" y="611" font-family="sans-serif" font-size="13" fill="#4b5563">有 → 现在就建（今天就要放差评原文，就建证据表）；没有 → 等它有（还不确定做不做 App，android/ 就不建）。⓿ 连目录都不建。</text>
 </svg>
