@@ -27,9 +27,9 @@
 **一行装上**（装到你在用的那个 Agent 的 skills 目录）：
 
 ```bash
-git clone https://github.com/fqyy360t/hackathon-flow.git ~/.claude/skills/hackathon-flow-lemon     # Claude Code
-git clone https://github.com/fqyy360t/hackathon-flow.git ~/.codex/skills/hackathon-flow-lemon      # Codex
-git clone https://github.com/fqyy360t/hackathon-flow.git ~/.workbuddy/skills/hackathon-flow-lemon  # WorkBuddy
+git clone https://github.com/fqyy360t/hackathon-flow.git ~/.claude/skills/hackathon-flow     # Claude Code
+git clone https://github.com/fqyy360t/hackathon-flow.git ~/.codex/skills/hackathon-flow      # Codex
+git clone https://github.com/fqyy360t/hackathon-flow.git ~/.workbuddy/skills/hackathon-flow  # WorkBuddy
 ```
 
 装完说这句话就能开始：**"我要打 XX 黑客松，只有这条链接：<url>。帮我看看值不值得打，从哪开始。"**
@@ -60,16 +60,16 @@ git clone https://github.com/fqyy360t/hackathon-flow.git ~/.workbuddy/skills/hac
 **A. 作为 Agent Skill**（Claude Code / Codex / WorkBuddy / 任何读 `skills/` 目录的工具）
 
 ```bash
-git clone https://github.com/fqyy360t/hackathon-flow.git ~/.claude/skills/hackathon-flow-lemon
+git clone https://github.com/fqyy360t/hackathon-flow.git ~/.claude/skills/hackathon-flow
 # Codex 用 ~/.codex/skills/，WorkBuddy 用 ~/.workbuddy/skills/
 ```
 
-目录名建议保持 `hackathon-flow-lemon`（与 `SKILL.md` 的 `name` 字段一致，部分工具会校验）。
+目录名建议保持 `hackathon-flow`（与 `SKILL.md` 的 `name` 字段一致，部分工具会校验）。
 
 **同时用多个 Agent 时，别复制三份**——复制出来的会各自变旧。装一份，另外两处建目录联接（Windows 下 `mklink /J`，macOS/Linux 用 `ln -s`），`git pull` 一次三处同步：
 
 ```bash
-mklink /J "%USERPROFILE%\.claude\skills\hackathon-flow-lemon" "%USERPROFILE%\.workbuddy\skills\hackathon-flow-lemon"
+mklink /J "%USERPROFILE%\.claude\skills\hackathon-flow" "%USERPROFILE%\.workbuddy\skills\hackathon-flow"
 ```
 
 **B. 只用模板，不装 skill**
