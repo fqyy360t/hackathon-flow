@@ -489,13 +489,13 @@ assets/
 
 如果它确实帮你少熬了几个通宵，或者帮你把项目从"跑不起来"推到"能提交、能演示"，可以请作者喝杯奶茶。**纯自愿**——不给也完全不影响使用，也不影响后续更新。
 
-<table>
+<table align="center">
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="200">
       <img src="images/sponsor/wechat.jpg" height="270" alt="微信支付收款码"><br>
       <sub>微信</sub>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="200">
       <img src="images/sponsor/alipay.jpg" height="270" alt="支付宝收款码"><br>
       <sub>支付宝</sub>
     </td>
