@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 920" width="1200" height="920" role="img" aria-label="十九份详规的串联图：五个阶段加一条横贯全程的带">
+  <rect width="1200" height="920" fill="#ffffff"/>
+
+  <text x="44" y="48" font-family="sans-serif" font-size="24" font-weight="700" fill="#111827">十九份详规，怎么串成一条线</text>
+  <text x="44" y="76" font-family="sans-serif" font-size="13.5" fill="#6b7280">从收到一条链接，到赛后变成下一场的资产。上面五格按时间走，下面一条带横贯全程——不按时间归的都不该塞进某一格。</text>
+
+  <!-- 主轴 -->
+  <line x1="72" y1="142" x2="72" y2="654" stroke="#d1d5db" stroke-width="2"/>
+
+  <!-- ============ ① 拿到链接 ============ -->
+  <g font-family="sans-serif">
+    <rect x="100" y="108" width="1056" height="112" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+    <line x1="86" y1="134" x2="100" y2="134" stroke="#2563eb" stroke-width="1.5"/>
+    <circle cx="72" cy="134" r="14" fill="#2563eb"/>
+    <text x="72" y="139" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+
+    <text x="120" y="139" font-size="15" font-weight="700" fill="#111827">拿到链接</text>
+    <text x="400" y="139" font-size="11.5" fill="#6b7280">当天 · 还没决定打不打</text>
+    <text x="1144" y="139" font-size="11.5" font-weight="700" fill="#2563eb" text-anchor="end">4 份</text>
+
+    <rect x="112" y="152" width="162" height="42" rx="7" fill="#ffffff" stroke="#bfdbfe"/>
+    <rect x="120" y="161" width="26" height="24" rx="5" fill="#2563eb"/>
+    <text x="133" y="178" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">13</text>
+    <text x="154" y="179" font-size="12" fill="#1f2937">输入解析</text>
+
+    <rect x="288" y="152" width="162" height="42" rx="7" fill="#ffffff" stroke="#bfdbfe"/>
+    <rect x="296" y="161" width="26" height="24" rx="5" fill="#2563eb"/>
+    <text x="309" y="178" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">08</text>
+    <text x="330" y="179" font-size="12" fill="#1f2937">赛道与组队</text>
+
+    <rect x="464" y="152" width="162" height="42" rx="7" fill="#ffffff" stroke="#bfdbfe"/>
+    <rect x="472" y="161" width="26" height="24" rx="5" fill="#2563eb"/>
+    <text x="485" y="178" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">00</text>
+    <text x="506" y="179" font-size="12" fill="#1f2937">时间轴与门禁</text>
+
+    <rect x="640" y="152" width="162" height="42" rx="7" fill="#ffffff" stroke="#bfdbfe"/>
+    <rect x="648" y="161" width="26" height="24" rx="5" fill="#2563eb"/>
+    <text x="661" y="178" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">01</text>
+    <text x="682" y="179" font-size="12" fill="#1f2937">逆向工程</text>
+
+    <text x="822" y="179" font-size="11" fill="#2563eb">← 这四份决定「要不要打」，30 分钟能收口</text>
+
+    <text x="120" y="212" font-size="11.5" fill="#374151">产出 → 赛程卡（三个日期 → 档位 → F 点）· 赛道盘点（几个赛道砍到只剩 1 个）· 一句能对外说的题</text>
+  </g>
+
+  <!-- ============ ② 准备期 ============ -->
+  <g font-family="sans-serif">
+    <rect x="100" y="238" width="1056" height="112" rx="12" fill="#f5f3ff" stroke="#ddd6fe"/>
+    <line x1="86" y1="264" x2="100" y2="264" stroke="#7c3aed" stroke-width="1.5"/>
+    <circle cx="72" cy="264" r="14" fill="#7c3aed"/>
+    <text x="72" y="269" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+
+    <text x="120" y="269" font-size="15" font-weight="700" fill="#111827">准备期</text>
+    <text x="400" y="269" font-size="11.5" fill="#6b7280">P = D − H/24 天 · L 档能到三周，X 档只有几天</text>
+    <text x="1144" y="269" font-size="11.5" font-weight="700" fill="#7c3aed" text-anchor="end">5 份</text>
+
+    <rect x="112" y="282" width="162" height="42" rx="7" fill="#ffffff" stroke="#ddd6fe"/>
+    <rect x="120" y="291" width="26" height="24" rx="5" fill="#7c3aed"/>
+    <text x="133" y="308" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">02</text>
+    <text x="154" y="309" font-size="12" fill="#1f2937">选题与调研</text>
+
+    <rect x="288" y="282" width="162" height="42" rx="7" fill="#ffffff" stroke="#ddd6fe"/>
+    <rect x="296" y="291" width="26" height="24" rx="5" fill="#7c3aed"/>
+    <text x="309" y="308" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">03</text>
+    <text x="330" y="309" font-size="12" fill="#1f2937">论证与预赛</text>
+
+    <rect x="464" y="282" width="162" height="42" rx="7" fill="#ffffff" stroke="#ddd6fe"/>
+    <rect x="472" y="291" width="26" height="24" rx="5" fill="#7c3aed"/>
+    <text x="485" y="308" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">04</text>
+    <text x="506" y="309" font-size="12" fill="#1f2937">Agent 架构</text>
+
+    <rect x="640" y="282" width="162" height="42" rx="7" fill="#ffffff" stroke="#ddd6fe"/>
+    <rect x="648" y="291" width="26" height="24" rx="5" fill="#7c3aed"/>
+    <text x="661" y="308" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">09</text>
+    <text x="682" y="309" font-size="12" fill="#1f2937">工程管理</text>
+
+    <rect x="816" y="282" width="162" height="42" rx="7" fill="#ffffff" stroke="#ddd6fe"/>
+    <rect x="824" y="291" width="26" height="24" rx="5" fill="#7c3aed"/>
+    <text x="837" y="308" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">14</text>
+    <text x="858" y="309" font-size="12" fill="#1f2937">仓库与远程</text>
+
+    <text x="120" y="342" font-size="11.5" fill="#374151">产出 → 证据包（几条真实差评）· 方案书 · 空容器工程（flow/ docs/ materials/）· 一个别人能 clone 的仓库</text>
+  </g>
+
+  <!-- ============ ③ 开赛后 ============ -->
+  <g font-family="sans-serif">
+    <rect x="100" y="368" width="1056" height="112" rx="12" fill="#fffbeb" stroke="#fde68a"/>
+    <line x1="86" y1="394" x2="100" y2="394" stroke="#d97706" stroke-width="1.5"/>
+    <circle cx="72" cy="394" r="14" fill="#d97706"/>
+    <text x="72" y="399" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+
+    <text x="120" y="399" font-size="15" font-weight="700" fill="#111827">开赛后 · 构建</text>
+    <text x="400" y="399" font-size="11.5" fill="#6b7280">O 点 → F 点（提交前约 7 小时）</text>
+    <text x="1144" y="399" font-size="11.5" font-weight="700" fill="#d97706" text-anchor="end">2 份</text>
+
+    <rect x="112" y="412" width="162" height="42" rx="7" fill="#ffffff" stroke="#fde68a"/>
+    <rect x="120" y="421" width="26" height="24" rx="5" fill="#d97706"/>
+    <text x="133" y="438" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">05</text>
+    <text x="154" y="439" font-size="12" fill="#1f2937">构建与验收</text>
+
+    <rect x="288" y="412" width="162" height="42" rx="7" fill="#ffffff" stroke="#fde68a"/>
+    <rect x="296" y="421" width="26" height="24" rx="5" fill="#d97706"/>
+    <text x="309" y="438" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">10</text>
+    <text x="330" y="439" font-size="12" fill="#1f2937">发布与部署</text>
+
+    <text x="474" y="439" font-size="11" fill="#b45309">← 这一格的纪律：只接不造。演示链路的步数，比功能数量重要</text>
+
+    <text x="120" y="472" font-size="11.5" fill="#374151">产出 → 一个能跑的 demo · 一个能在别人机器上打开的地址（第 1 天就该有白页）</text>
+  </g>
+
+  <!-- ============ ④ 收口 ============ -->
+  <g font-family="sans-serif">
+    <rect x="100" y="498" width="1056" height="112" rx="12" fill="#fef2f2" stroke="#fecaca"/>
+    <line x1="86" y1="524" x2="100" y2="524" stroke="#dc2626" stroke-width="1.5"/>
+    <circle cx="72" cy="524" r="14" fill="#dc2626"/>
+    <text x="72" y="529" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+
+    <text x="120" y="529" font-size="15" font-weight="700" fill="#111827">收口 · 提交</text>
+    <text x="400" y="529" font-size="11.5" fill="#6b7280">F 点 → 提交 · 材料冻结在提交前约 3.5 小时</text>
+    <text x="1144" y="529" font-size="11.5" font-weight="700" fill="#dc2626" text-anchor="end">3 份</text>
+
+    <rect x="112" y="542" width="162" height="42" rx="7" fill="#ffffff" stroke="#fecaca"/>
+    <rect x="120" y="551" width="26" height="24" rx="5" fill="#dc2626"/>
+    <text x="133" y="568" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">06</text>
+    <text x="154" y="569" font-size="12" fill="#1f2937">叙事与交付</text>
+
+    <rect x="288" y="542" width="162" height="42" rx="7" fill="#ffffff" stroke="#fecaca"/>
+    <rect x="296" y="551" width="26" height="24" rx="5" fill="#dc2626"/>
+    <text x="309" y="568" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">15</text>
+    <text x="330" y="569" font-size="12" fill="#1f2937">提交整理</text>
+
+    <rect x="464" y="542" width="162" height="42" rx="7" fill="#ffffff" stroke="#fecaca"/>
+    <rect x="472" y="551" width="26" height="24" rx="5" fill="#dc2626"/>
+    <text x="485" y="568" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">17</text>
+    <text x="506" y="569" font-size="12" fill="#1f2937">README 门面</text>
+
+    <text x="646" y="569" font-size="11" fill="#b91c1c">← 只修不加。这时候新增的每个功能都是风险</text>
+
+    <text x="120" y="602" font-size="11.5" fill="#374151">产出 → 路演稿 + 演示脚本 · 项目结构文档 · 仓库门面 · 提交包（清 → 正 → 补 → 验 → 锁 → 点）</text>
+  </g>
+
+  <!-- ============ ⑤ 赛后 ============ -->
+  <g font-family="sans-serif">
+    <rect x="100" y="628" width="1056" height="112" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <line x1="86" y1="654" x2="100" y2="654" stroke="#059669" stroke-width="1.5"/>
+    <circle cx="72" cy="654" r="14" fill="#059669"/>
+    <text x="72" y="659" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+
+    <text x="120" y="659" font-size="15" font-weight="700" fill="#111827">赛后 48 小时</text>
+    <text x="400" y="659" font-size="11.5" fill="#6b7280">提交之后 · 趁记忆还在</text>
+    <text x="1144" y="659" font-size="11.5" font-weight="700" fill="#059669" text-anchor="end">1 份</text>
+
+    <rect x="112" y="672" width="162" height="42" rx="7" fill="#ffffff" stroke="#a7f3d0"/>
+    <rect x="120" y="681" width="26" height="24" rx="5" fill="#059669"/>
+    <text x="133" y="698" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">16</text>
+    <text x="154" y="699" font-size="12" fill="#1f2937">赛后复盘</text>
+
+    <text x="298" y="699" font-size="11" fill="#047857">← 只写感受的复盘等于没写：要能被下一场直接抄走</text>
+
+    <text x="120" y="732" font-size="11.5" fill="#374151">产出 → 复盘四层（事实 / 归因 / 可复用 / 反哺）· 下一场直接从起点起跑，不重新发明</text>
+  </g>
+
+  <!-- ============ 横贯全程 ============ -->
+  <g font-family="sans-serif">
+    <rect x="100" y="762" width="1056" height="120" rx="12" fill="#f8fafc" stroke="#94a3b8" stroke-dasharray="7 5"/>
+    <text x="120" y="794" font-size="15" font-weight="700" fill="#334155">全程横贯 · 任何时候都可能用到</text>
+    <text x="120" y="814" font-size="11.5" fill="#64748b">这四份不按时间归：评分表可能开赛后第 29 小时才到，协作从第 1 天就得有——塞进某一格，那一格之外就会漏。</text>
+
+    <rect x="112" y="826" width="162" height="42" rx="7" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="120" y="835" width="26" height="24" rx="5" fill="#475569"/>
+    <text x="133" y="852" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">12</text>
+    <text x="154" y="853" font-size="12" fill="#1f2937">评分表迟到</text>
+
+    <rect x="288" y="826" width="162" height="42" rx="7" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="296" y="835" width="26" height="24" rx="5" fill="#475569"/>
+    <text x="309" y="852" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">18</text>
+    <text x="330" y="853" font-size="12" fill="#1f2937">打分</text>
+
+    <rect x="464" y="826" width="162" height="42" rx="7" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="472" y="835" width="26" height="24" rx="5" fill="#475569"/>
+    <text x="485" y="852" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">11</text>
+    <text x="506" y="853" font-size="12" fill="#1f2937">真实赛程校准</text>
+
+    <rect x="640" y="826" width="162" height="42" rx="7" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="648" y="835" width="26" height="24" rx="5" fill="#475569"/>
+    <text x="661" y="852" font-size="11.5" font-weight="700" fill="#ffffff" text-anchor="middle">07</text>
+    <text x="682" y="853" font-size="12" fill="#1f2937">协作机制</text>
+
+    <text x="822" y="853" font-size="11" fill="#475569">← 四个 agent 之间没有通道，只能靠文件</text>
+  </g>
+
+  <text x="112" y="906" font-family="sans-serif" font-size="11.5" fill="#6b7280">19 = 4 + 5 + 2 + 3 + 1（按阶段）+ 4（横贯）。真读的时候从 00 起手，其余按你此刻站在哪一格取。</text>
+</svg>
