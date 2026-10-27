@@ -20,8 +20,10 @@
     <text x="42" y="243" font-size="12" fill="#1f2937"><tspan font-weight="700" fill="#2563eb">08</tspan><tspan dx="6">赛道与组队</tspan></text>
     <text x="42" y="267" font-size="12" fill="#1f2937"><tspan font-weight="700" fill="#2563eb">00</tspan><tspan dx="6">时间轴门禁</tspan></text>
     <text x="42" y="291" font-size="12" fill="#1f2937"><tspan font-weight="700" fill="#2563eb">01</tspan><tspan dx="6">逆向工程</tspan></text>
-    <text x="42" y="323" font-size="10.5" fill="#1d4ed8">→ 赛程卡 · 赛道盘点</text>
-    <text x="42" y="339" font-size="10.5" fill="#1d4ed8">→ 一句能对外说的题</text>
+    <text x="42" y="319" font-size="10.5" fill="#1d4ed8">→ 赛程卡 · 赛道盘点</text>
+    <text x="42" y="335" font-size="10.5" fill="#1d4ed8">→ 每个赛道背后：谁在出题</text>
+    <text x="42" y="351" font-size="10.5" fill="#1d4ed8">→ 它自己要解决的痛点</text>
+    <text x="42" y="367" font-size="10.5" fill="#1d4ed8">→ 一句能对外说的题</text>
   </g>
 
   <!-- ===== 2 准备期 ===== -->
